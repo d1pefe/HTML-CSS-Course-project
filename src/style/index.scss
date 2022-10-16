@@ -452,3 +452,54 @@ body {
         }
     }
 }
+
+.stylish {
+    padding: 80px 170px 0px 170px;
+    background: url(/src/assets/img/stylish-bg.svg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    
+    &-heading {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &-paragraph {
+        margin: 40px 0 0 0;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &-button {
+        margin: 73px 0 50px 0;
+            height: 58px;
+            width: 270px;
+            border: 2px solid #FFFFFF;
+            background-image: none; 
+            background: transparent;
+            float: left;
+            background-color: transparent;
+                font-family: 'OpenSans';
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                text-transform: capitalize;
+                color: #FFFFFF;
+    }
+}
