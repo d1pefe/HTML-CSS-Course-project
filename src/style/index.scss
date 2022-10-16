@@ -23,30 +23,157 @@ body {
     height: 75px;
     background-color: #000000;
     padding: 0 170px 0 115px;
+
+    &_flex {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+        height: 75px;
+    }
+    
+    &_nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 88px;
+        width: 570px;
+    
+        &__link {
+            font-family: 'OpenSans';
+            font-style: normal;
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    }
 }
 
-.header_flex {
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
-    height: 75px;
-}
+.main-axit {
+    background: url(/src/assets/img/image.png);
+    background-repeat: no-repeat;
+    padding: 208px 170px 250px 170px;
 
-.header_nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 88px;
-    width: 570px;
-}
+    &__flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-.header_nav__link {
-    font-family: 'OpenSans';
-    font-style: normal;
-    font-size: 14px;
-    line-height: 19px;
-    text-transform: capitalize;
-    color: #FFFFFF;
-    text-decoration: none;
+    .descriptions {
+
+        &-heading {
+            margin: 56px 0 0 0;
+            width: 670px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 56px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        &-line {
+            margin: 55px 0 0 0;
+            width: 170px;
+            border: 1px solid #FFFFFF;
+        }
+
+        &-paragraph {
+            margin: 42px 0 0 0;
+            width: 270px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+        }
+
+        &-button {
+            margin: 42px 0 0 0;
+            height: 58px;
+            width: 270px;
+            border: 2px solid #FFFFFF;
+            background-image: none; 
+            background: transparent;
+            float: left;
+            background-color: transparent;
+                font-family: 'OpenSans';
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                text-transform: capitalize;
+                color: #FFFFFF;
+        }
+    }
+
+    .forms {
+        &-free {
+            background: #FFFFFF;
+            border-radius: 10px;
+            padding-top: 33px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            &-heading{
+                margin: 0;
+                font-family: 'OpenSans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #333333;
+                margin: 0 50px 66px 50px;
+
+                span {
+                    color: #EC7979;
+                }
+            }
+
+            &-input {
+                border: none;
+                border-bottom: 1px solid #BDBDBD;
+                width: 307px;
+                height: 35px;
+                margin-bottom: 33px;
+                font-family: 'OpenSans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                color: #BDBDBD;
+            }
+
+            &-input:nth-child(4) {
+                margin-bottom: 75px;
+            }
+
+            &-button {
+                width: 470px;
+                height: 60px;
+                border: none;
+                background: #EC7979;
+                border-radius: 0px 0px 10px 10px;
+                    font-family: 'OpenSans';
+                    text-decoration: none;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: #FFFFFF;
+            }
+        }
+    }
 }
