@@ -2,7 +2,7 @@
   "name": "html-css-course-project",
   "version": "1.0.0",
   "source": "src/index.html",
-  "description": "course for TMS",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "parcel",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/d1pefe/HTML-CSS-Course-project#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
     "sass": "^1.55.0"
   }
