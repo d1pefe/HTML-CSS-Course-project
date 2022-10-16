@@ -1,10 +1,12 @@
 {
   "name": "html-css-course-project",
   "version": "1.0.0",
-  "description": "",
+  "source": "src/index.html",
+  "description": "course for TMS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
