@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../assets/fonts/OpenSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../assets/fonts/Raleway-Medium.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1170px;
+    padding: 0 15px 0 15px;
+    margin: 0;
+}
+
+.header {
+    height: 75px;
+    background-color: #000000;
+    padding: 0 170px 0 115px;
+}
+
+.header_flex {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    height: 75px;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 88px;
+    width: 570px;
+}
+
+.header_nav__link {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+}
