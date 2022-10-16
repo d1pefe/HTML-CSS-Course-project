@@ -19,9 +19,7 @@
   },
   "homepage": "https://github.com/d1pefe/HTML-CSS-Course-project#readme",
   "devDependencies": {
-    "parcel": "^2.7.0"
-  },
-  "dependencies": {
+    "parcel": "^2.7.0",
     "sass": "^1.55.0"
   }
 }
