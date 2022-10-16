@@ -414,4 +414,41 @@ body {
         text-align: center;
         color: #86878B;
     }
+
+    &-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 107px;
+
+        &_block {
+            width: 370px;
+            background: #E2E2E2;
+            border-radius: 10px;
+
+            &__text {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                color: #86878B;
+                margin: 38px 15px 37px 15px;
+            }
+        }
+    }
+
+    &-grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 107px;
+
+        &_block {
+            width: 370px;
+            background: #E2E2E2;
+            border-radius: 10px;
+        }
+    }
 }
