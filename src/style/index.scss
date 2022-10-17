@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 1170px;
+    max-width: 1170px;
     padding: 0 15px 0 15px;
     margin: 0;
 }
@@ -29,7 +29,7 @@ body {
         flex-direction: row;
         align-items:center;
         justify-content: space-between;
-        height: 75px;
+        max-height: 75px;
     }
     
     &_nav {
@@ -71,7 +71,7 @@ body {
 
         &-heading {
             margin: 56px 0 0 0;
-            width: 670px;
+            max-width: 670px;
             font-family: 'Raleway';
             font-style: normal;
             font-weight: 500;
@@ -83,13 +83,13 @@ body {
 
         &-line {
             margin: 55px 0 0 0;
-            width: 170px;
+            max-width: 170px;
             border: 1px solid #FFFFFF;
         }
 
         &-paragraph {
             margin: 42px 0 0 0;
-            width: 270px;
+            max-width: 270px;
             font-family: 'Raleway';
             font-style: normal;
             font-weight: 400;
@@ -221,7 +221,7 @@ body {
         align-items: center;
         
         &-descriptions{
-            width: 470px;
+            max-width: 470px;
             &__heading{               
                 font-family: 'OpenSans';
                 font-style: normal;
@@ -232,7 +232,7 @@ body {
                 color: #333333;
             }
             &__paragraph {       
-                width: 470px;       
+                max-width: 470px;       
                 font-family: 'Raleway';
                 font-style: normal;
                 font-weight: 400;
@@ -245,7 +245,7 @@ body {
         &-links {
             display: flex;
             justify-content: space-between;
-            height: 70px;
+            max-height: 70px;
             width: 670px;
             padding-left: 40px;
         }
@@ -670,5 +670,117 @@ body {
         line-height: 21px;
         text-align: center;
         color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        max-width: none;
+        padding: 0 15px;
+    }
+
+    .header {
+        max-height: 56px;
+        padding: 0;
+
+        &_flex img {
+            width: 130px;
+        }
+        
+        &_nav {
+            display: none;
+        }
+    }
+
+    .main-axit {
+        padding: 0;
+
+        &__flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .descriptions {
+
+            img {
+                display: none;
+            }
+
+            &-heading {
+                margin: 84px 0 0 0;
+                max-width: 288px;
+                font-size: 36px;
+                line-height: 42px;
+                text-align: center;
+            }
+
+            &-line {
+                margin: 43px 78px 0 78px;
+                max-width: 134px;
+            }
+
+            &-paragraph {
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+            }
+
+            &-button {
+                margin: 42px 0 56px 0;
+                height: 50px;
+                width: 288px;
+            }
+        }
+
+        .forms {
+            &-free {
+                margin-bottom: 50px;
+
+                &-heading{
+                    font-size: 14px;
+                    line-height: 19px;
+                    margin: 0 28px 15px 20px;
+                }
+
+                &-input {
+                    width: 240px;
+                }
+
+                &-button {
+                    width: 290px;
+                }
+            }
+        }
+    }
+
+    .social {
+        padding: 0;
+    
+        &-flex{
+            flex-direction: column;
+            
+            &-descriptions{
+                max-width: 270px;
+                &__heading{
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+                &__paragraph {       
+                    max-width: 470px;       
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                }
+            }
+    
+            &-links {
+                max-height: 26px;
+                max-width: 290px;
+                padding: 0 0 44px 0;
+            }
+        }
     }
 }
