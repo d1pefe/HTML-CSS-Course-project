@@ -247,13 +247,14 @@ body {
             justify-content: space-between;
             height: 70px;
             width: 670px;
+            padding-left: 40px;
         }
     }
 }
 
 .about {
     padding: 107px 170px 58px 170px;
-
+    
     &-heading {  
         font-family: 'Raleway';
         font-style: normal;
