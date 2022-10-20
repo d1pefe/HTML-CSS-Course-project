@@ -58,6 +58,7 @@ body {
 .main-axit {
     background: url(/src/assets/img/image.png);
     background-repeat: no-repeat;
+    background-position: center;
     padding: 208px 0 250px 0;
 
     &__flex {
@@ -517,7 +518,7 @@ body {
 }
 
 .revievs {
-    padding: 107px 0 58px 0;
+    padding: 107px 0 38px 0;
 
     &-heading {  
         font-family: 'Raleway';
@@ -555,7 +556,8 @@ body {
 
         &_block {
             width: 370px;
-            background: #E2E2E2;
+            background: url(../assets/img/Rectangle\ 118.png);
+            height: 200px;
             border-radius: 10px;
 
             &__text {
@@ -571,23 +573,50 @@ body {
         }
     }
 
-    &-grid {
+    &-mflex {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        margin-top: 107px;
+        margin-top: 57px;
 
         &_block {
             width: 370px;
-            background: #E2E2E2;
-            border-radius: 10px;
+            display: flex;
+
+            img {
+                width: 70px;
+                height: 70px;
+                margin-right: 30px;
+            }
+
+            &-heading {
+                margin-bottom: 35px;
+                font-family: 'OpenSans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                text-transform: capitalize;
+                color: #000000;
+            }
+
+            &-paragraph {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                color: #000000;
+            }
         }
     }
 }
 
 .stylish {
     padding: 80px 0 0px 0;
-    background: url(/src/assets/img/stylish-bg.svg);
+    background: url(/src/assets/img/stylish-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1088,17 +1117,8 @@ body {
             }
         }
     
-        &-grid {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 107px;
-    
-            &_block {
-                width: 370px;
-                background: #E2E2E2;
-                border-radius: 10px;
-            }
+        &-mflex {
+            display: none;
         }
     }
 
@@ -1421,6 +1441,10 @@ body {
                     margin: 38px 25px 37px 25px;
                 }
             }
+        }
+
+        &-mflex {
+            display: none;
         }
     }
 
