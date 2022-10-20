@@ -212,7 +212,7 @@ body {
 
 .social {
     background: #F8EFEF;
-    padding: 0 0 18px 0;
+    padding: 18px 0 18px 0;
 
     &-flex{
         display: flex;
@@ -347,7 +347,7 @@ body {
         line-height: 42px;
         text-align: center;
         color: #000000;
-        margin: 0 0 57px 0;
+        margin: 40px 0 57px 0;
     }
 
     hr {
@@ -376,6 +376,7 @@ body {
             display: flex;
             align-items: center;
             flex-direction: column;
+            margin-right: 30px;
 
             &__heading {
                 font-family: 'OpenSans';
@@ -398,6 +399,10 @@ body {
                 text-align: center;
                 color: #000000;
             }
+        }
+
+        &_block:nth-child(3) {
+            margin-right: 0;
         }
     }
 }
