@@ -1019,7 +1019,7 @@ body {
     }
 
     .prices {
-        padding: 0;
+        padding: 15px 0 0 0;
     
         &-heading {
             font-size: 24px;
@@ -1196,7 +1196,7 @@ body {
         }
     
         &-button {
-            margin: 0 0 20px 0;
+            margin: 20px auto;
             width: 288px;
                     font-family: 'OpenSans';
                     text-decoration: none;
